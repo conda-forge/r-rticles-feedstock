@@ -1,4 +1,4 @@
-{% set version = '0.10' %}
+{% set version = "0.11" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rticles_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rticles/rticles_{{ version }}.tar.gz
-  sha256: 7b95cf36ec5b245daede6712a6d9e68acd18ed2930dc81e320960869b20bf84f
+  sha256: b5c04de73b1aa4780e2d58ee20c701e50d88d52a4f38a173a0757524e1a9ebbf
 
 build:
   merge_build_host: True  # [win]
