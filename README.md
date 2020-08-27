@@ -5,7 +5,7 @@ Home: https://github.com/rstudio/rticles
 
 Package license: GPL-3
 
-Feedstock license: BSD 3-Clause
+Feedstock license: BSD-3-Clause
 
 Summary: A suite of custom R Markdown formats and templates for authoring journal articles and conference submissions.
 
