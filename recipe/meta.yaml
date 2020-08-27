@@ -1,4 +1,4 @@
-{% set version = "0.14" %}
+{% set version = "0.15" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/rticles_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/rticles/rticles_{{ version }}.tar.gz
-  sha256: 672abfc7c4a24a281c1dd46ff947db65280e1add52291227845f69455674e78c
+  sha256: 14c1e1386d232eeca833f87686e608584480d20adfa9c26feb0d538bd912706b
 
 build:
-  merge_build_host: True  # [win]
-  number: 1
+  merge_build_host: true  # [win]
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
@@ -46,10 +46,9 @@ test:
 about:
   home: https://github.com/rstudio/rticles
   license: GPL-3
-  summary: A suite of custom R Markdown formats and templates for authoring journal articles
-    and conference submissions.
+  summary: A suite of custom R Markdown formats and templates for authoring journal articles and conference submissions.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
+  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
