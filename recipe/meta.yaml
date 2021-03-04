@@ -25,16 +25,16 @@ requirements:
     - {{ posix }}zip               # [win]
   host:
     - r-base
-    - r-knitr
-    - r-rmarkdown
-    - r-tinytex
+    - r-knitr >=1.30
+    - r-rmarkdown >=2.5
+    - r-tinytex >=0.30
     - r-xfun
     - r-yaml
   run:
     - r-base
-    - r-knitr
-    - r-rmarkdown
-    - r-tinytex
+    - r-knitr >=1.30
+    - r-rmarkdown >=2.5
+    - r-tinytex >=0.30
     - r-xfun
     - r-yaml
 
@@ -45,10 +45,11 @@ test:
 
 about:
   home: https://github.com/rstudio/rticles
-  license: GPL-3
+  license: GPL-3.0-only
   summary: A suite of custom R Markdown formats and templates for authoring journal articles and conference submissions.
   license_family: GPL3
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3
 
 extra:
   recipe-maintainers:
