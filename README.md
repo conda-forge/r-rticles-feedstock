@@ -1,11 +1,11 @@
-About r-rticles
-===============
+About r-rticles-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rticles-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/rstudio/rticles
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-rticles-feedstock/blob/main/LICENSE.txt)
 
 Summary: A suite of custom R Markdown formats and templates for authoring journal articles and conference submissions.
 
